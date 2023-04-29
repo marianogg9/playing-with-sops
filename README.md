@@ -47,7 +47,7 @@ creation_rules:
 ```
 
 ### Create a secrets file
-Remember to name it following the `creation_rules.path_regex` naming convention.
+Remember the `creation_rules.path_regex` naming convention.
 ```bash
 sops file.yaml
 ```
