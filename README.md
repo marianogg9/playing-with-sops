@@ -53,5 +53,16 @@ sops file.yaml
 ```
 
 This will open a text editor in console (`vi` in my case) where you already have a template set of values to modify.
-When you are done modifying and save the file, SOPS will automatically encrypt the file, which will then contain the values encrypted in the following format:
+When you are done modifying and save the file, SOPS will automatically run the encryption process. If you then open the file, the encrypted values are in the following format:
 `a-given-key: ENC[AES256_GCM,data:hash,iv:hash,tag:hash,type:str]` - including a data encryption key, the encrypted value and the original value type.
+
+### Encrypt an existent file
+If you already have a file you want to encrypt:
+```bash
+sops -e -i existing-file.yaml
+```
+
+This will encrypt the file in place. If you want to modify its content, run `sops existing-file.yaml` which will unencrypt it and open a text editor. When you are finished modifying, save it and SOPS will re encrypt its values and update both its `sops.lastmodified` and `sops.mac` attributes.
+
+## Reference
+(SOPS on GitHub)[https://github.com/mozilla/sops]
