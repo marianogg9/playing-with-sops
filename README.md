@@ -65,4 +65,4 @@ sops -e -i existing-file.yaml
 This will encrypt the file in place. If you want to modify its content, run `sops existing-file.yaml` which will unencrypt it and open a text editor. When you are finished modifying, save it and SOPS will re encrypt its values and update both its `sops.lastmodified` and `sops.mac` attributes.
 
 ## Reference
-(SOPS on GitHub)[https://github.com/mozilla/sops]
+[SOPS on GitHub](https://github.com/mozilla/sops)
