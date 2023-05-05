@@ -4,6 +4,18 @@ Here is a sample SOPS implementation using AWS KMS.
 
 Please have a look at the [blog article]() I wrote for better insights.
 
+1. [Prerequisites](#prerequisites)
+    1. [KMS](#kms)
+    2. [IAM](#iam)
+    3. [Via Terraform](#via-terraform)
+2. [SOPS](#sops)
+    1. [Installing](#installing)
+    2. [Add .sops.yaml](#add-sopsyaml-for-global-configuration)
+    3. [Create a secrets file](#create-a-secrets-file)
+    4. [Encrypt an existent file](#encrypt-an-existent-file)
+    5. [Decrypt](#decrypt)
+3. [Reference](#reference)
+
 ## Prerequisites
 
 ### KMS
