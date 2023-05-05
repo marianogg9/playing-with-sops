@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.name }}
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.name }}
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.name }}
+        version: v1
+    spec:
+      serviceAccountName: {{ .Values.name }}
+      containers:
+      - image: docker.io/kong/httpbin
+        imagePullPolicy: IfNotPresent
+        name: {{ .Values.name }}
+        ports:
+        - containerPort: 80

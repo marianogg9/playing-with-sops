@@ -120,9 +120,11 @@ Which will unencrypt it and open a text editor.
 
 When you are finished modifying, save it and SOPS will re encrypt its values and update both its `sops.lastmodified` and `sops.mac` attributes.
 
+If you want to use different files for encrypted and unencrypted content, you can make use of `--output` flag to write the encrypt/decrypt results.
+
 ### Decrypt
 
-There are two ways of doing it:
+There are different ways of doing it:
 - In place:
     ```bash
     sops -i -d file.yaml
@@ -134,6 +136,12 @@ There are two ways of doing it:
     sops -d file.yaml
     ```
     Will unencrypt its content and write to stdout.
+
+- To a different file:
+    ```bash
+    sops -d --output output-file.yaml file.yaml
+    ```
+    Will unencrypt and write its content to `output-file.yaml`.
 
 ## Reference
 [SOPS on GitHub](https://github.com/mozilla/sops)

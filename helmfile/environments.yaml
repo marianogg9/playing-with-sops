@@ -1,0 +1,7 @@
+environments:
+  default:
+    values:
+    - default-values.yaml
+  example:
+    values:
+    - example-environment-values.yaml

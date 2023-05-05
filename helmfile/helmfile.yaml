@@ -1,0 +1,11 @@
+bases:
+- environments.yaml
+
+releases:
+- name: example-release
+  namespace: example-ns
+  labels:
+    app: example
+  values:
+  - values.yaml.gotmpl
+  chart: ./charts/httpbin
