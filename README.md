@@ -46,7 +46,7 @@ Create a KMS key.
                     "kms:Encrypt",
                     "kms:DescribeKey"
                 ],
-                "Resource": "arn:of:your:ksm:key"
+                "Resource": "arn:of:your:kms:key"
             }
         ]
     }
