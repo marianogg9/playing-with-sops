@@ -1,3 +1,4 @@
+## Via Terraform
 There is a caveat though. Currently, [a bug in AWS provider](https://github.com/hashicorp/terraform-provider-aws/issues/27611) is blocking Terraform to fetch back `TRUE` status of the KMS policy apply.
 Feel free to upvote it.
 
