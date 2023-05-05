@@ -21,3 +21,8 @@ spec:
         name: {{ .Values.name }}
         ports:
         - containerPort: 80
+        env:
+        - name: FIRST_VAR
+          value: {{ .Values.my_var }}
+        - name: SECOND_VAR
+          value: {{ .Values.my_other_var }}

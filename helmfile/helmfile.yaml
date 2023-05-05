@@ -8,4 +8,6 @@ releases:
     app: example
   values:
   - values.yaml.gotmpl
+  secrets:
+  - secrets.yaml
   chart: ./charts/httpbin
