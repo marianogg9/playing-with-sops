@@ -14,7 +14,8 @@ Please have a look at the [blog article]() I wrote for better insights.
     3. [Create a secrets file](#create-a-secrets-file)
     4. [Encrypt an existent file](#encrypt-an-existent-file)
     5. [Decrypt](#decrypt)
-3. [Reference](#reference)
+3. [Working example with Helmfile](#working-example-with-helmfile)
+4. [Reference](#reference)
 
 ## Prerequisites
 
@@ -142,6 +143,9 @@ There are different ways of doing it:
     sops -d --output output-file.yaml file.yaml
     ```
     Will unencrypt and write its content to `output-file.yaml`.
+
+## Working example with Helmfile
+I added a sample walkthrough using Helmfile + Minikube in [this article](). The required files are in `helmfile/` dir.
 
 ## Reference
 [SOPS on GitHub](https://github.com/mozilla/sops)

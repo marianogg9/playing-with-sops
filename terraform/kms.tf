@@ -14,7 +14,7 @@ resource "aws_kms_key_policy" "kms_key_policy" {
         ]
         Effect = "Allow"
         Principal = {
-          AWS = "arn:aws:iam::202806275590:root"
+          AWS = join("", ["arn:aws:iam::", data.aws_caller_identity.current.account_id, "root"])
         }
         Resource = "*"
       },
