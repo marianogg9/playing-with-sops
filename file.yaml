@@ -1,25 +1,14 @@
-hello: ENC[AES256_GCM,data:hash,iv:hash,tag:hash,type:str]
-example_key: ENC[AES256_GCM,data:hash,iv:hash,tag:hash,type:str]
-#ENC[AES256_GCM,data:hash,iv:hash,tag:hash,type:comment]
-example_array:
-    - ENC[AES256_GCM,data:hash,iv:hash,tag:hash,type:str]
-    - ENC[AES256_GCM,data:hash,iv:hash,tag:hash,type:str]
-example_number: ENC[AES256_GCM,data:hash,iv:hash,tag:hash,type:float]
-example_booleans:
-    - ENC[AES256_GCM,data:hash,iv:hash,tag:hash,type:bool]
-    - ENC[AES256_GCM,data:hash,iv:hash,tag:hash,type:bool]
-sops:
-    kms:
-        - arn: arn:of:your:kms:key
-          created_at: "2023-05-04T16:41:39Z"
-          enc: <hash>
-          aws_profile: ""
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age: []
-    lastmodified: "2023-05-04T16:41:47Z"
-    mac: ENC[AES256_GCM,data:hash,iv:hash,tag:hash,type:str]
-    pgp: []
-    unencrypted_suffix: _unencrypted
-    version: 3.7.3
+first-value: something super secret
+secondOne:
+    mix:
+        values:
+            - lets
+            - do
+            - a
+            - list
+        otherValues:
+            could: 1
+            be: 2
+            a: 3
+            map: false
+            too: 4
