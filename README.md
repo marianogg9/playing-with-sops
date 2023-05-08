@@ -2,7 +2,7 @@
 
 Here is a sample SOPS implementation using AWS KMS.
 
-Please have a look at the [blog article]() I wrote for better insights.
+Please have a look at the [blog article](https://blog.mariano.cloud/all-right-then-keep-your-secrets-in-git-with-sops) I wrote for a walkthrough.
 
 1. [Prerequisites](#prerequisites)
     1. [KMS](#kms)
@@ -63,6 +63,8 @@ You will find all the instructions in there.
 ---
 
 ## SOPS
+
+Configure your local AWS CLI to use the IAM user's (created before) credentials. See [this article](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
 
 ### Installing
 ```bash
